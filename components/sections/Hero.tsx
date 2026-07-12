@@ -24,13 +24,6 @@ const trustItems = [
   },
 ];
 
-const highlights = [
-  "Dry Van Freight",
-  "Texas Based",
-  "Broker Ready",
-  "Customer Focused",
-];
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white">
@@ -88,18 +81,6 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl border border-white/10 bg-slate-900/90 p-6 shadow-2xl backdrop-blur">
-          <div className="grid gap-4 md:grid-cols-4">
-            {highlights.map((item) => (
-              <div
-                key={item}
-                className="rounded-xl border border-white/10 bg-white/5 px-5 py-5 text-center"
-              >
-                <p className="font-black uppercase text-white">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
