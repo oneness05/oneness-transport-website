@@ -45,9 +45,20 @@ export default function Footer() {
             <h3 className="font-bold">Contact</h3>
             <div className="mt-5 space-y-3 text-slate-400">
               <p>ONENESS TRANSPORT LLC</p>
-              <p>Texas Based Carrier</p>
-              <p>Dry Van Freight</p>
-              <p>Email: onenesstransportllc@gmail.com</p>
+              <p>Austin, Texas</p>
+              <p>USDOT 4853711 · MC 91452779</p>
+              <a
+                href="tel:+15863828025"
+                className="block transition hover:text-orange-400"
+              >
+                586-382-8025
+              </a>
+              <a
+                href="mailto:dispatch@onenesstransport.com"
+                className="block transition hover:text-orange-400"
+              >
+                dispatch@onenesstransport.com
+              </a>
             </div>
           </div>
         </div>

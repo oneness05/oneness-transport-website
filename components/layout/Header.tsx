@@ -54,13 +54,18 @@ export default function Header() {
           onClick={() => setOpen(!open)}
           className="text-3xl text-white lg:hidden"
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
         >
           {open ? "×" : "☰"}
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-slate-950 px-6 py-6 lg:hidden">
+        <div
+          id="mobile-navigation"
+          className="border-t border-white/10 bg-slate-950 px-6 py-6 lg:hidden"
+        >
           <nav className="flex flex-col gap-5 text-sm font-semibold text-white">
             {navLinks.map((link) => (
               <Link

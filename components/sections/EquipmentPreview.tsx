@@ -88,7 +88,7 @@ export default function EquipmentPreview() {
 
                     <div>
                       <p className="text-xl font-black">
-                        Dark Blue KW Team
+                        Dark Blue Kenworth T680
                       </p>
                       <p className="mt-1 text-slate-300">
                         Paired with a white dry van trailer

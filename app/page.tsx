@@ -18,9 +18,9 @@ export default function Home() {
         <AboutPreview />
         <ServicesPreview />
         <WhyChooseUs />
-        <BrokerTrust />
         <EquipmentPreview />
         <ServiceAreaPreview />
+        <BrokerTrust />
         <CTA />
       </main>
       <Footer /> 
