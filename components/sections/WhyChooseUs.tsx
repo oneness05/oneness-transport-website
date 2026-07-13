@@ -1,20 +1,26 @@
+import { Clock3, FileCheck2, ShieldCheck, Truck } from "lucide-react";
+
 const features = [
   {
+    icon: Clock3,
     title: "On-Time Delivery",
     description:
       "Reliable scheduling and consistent communication from pickup to delivery.",
   },
   {
+    icon: Truck,
     title: "Dry Van Specialists",
     description:
       "Focused on safe, secure dry van freight transportation across Texas and beyond.",
   },
   {
+    icon: FileCheck2,
     title: "Broker Ready",
     description:
       "Professional documentation, quick onboarding, and responsive support.",
   },
   {
+    icon: ShieldCheck,
     title: "Integrity First",
     description:
       "Every shipment is handled with honesty, professionalism, and accountability.",
@@ -44,8 +50,12 @@ export default function WhyChooseUs() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="rounded-2xl border border-slate-200 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="group rounded-2xl border border-slate-200 p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-orange-300 hover:shadow-lg"
             >
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-orange-100 transition-colors group-hover:bg-orange-500">
+                <feature.icon className="h-7 w-7 text-orange-600 transition-colors group-hover:text-white" />
+              </div>
+
               <h3 className="text-xl font-bold text-slate-900">
                 {feature.title}
               </h3>

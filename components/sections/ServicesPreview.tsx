@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Truck, Route, Handshake } from "lucide-react";
+import { ArrowRight, Truck, Route, Handshake } from "lucide-react";
 
 const services = [
   {
@@ -7,18 +7,21 @@ const services = [
     description:
       "Safe and dependable transportation for general dry freight with on-time delivery.",
     icon: Truck,
+    href: "/services",
   },
   {
     title: "Regional & Long Haul",
     description:
       "Serving Texas and interstate lanes with reliable scheduling and communication.",
     icon: Route,
+    href: "/services",
   },
   {
     title: "Broker Partnerships",
     description:
       "Fast onboarding, responsive communication, and dependable service for brokers.",
     icon: Handshake,
+    href: "/broker-setup",
   },
 ];
 
@@ -68,9 +71,13 @@ export default function ServicesPreview() {
                 {service.description}
               </p>
 
-              <div className="mt-8 font-semibold text-orange-500 transition group-hover:translate-x-2">
-                Learn More →
-              </div>
+              <Link
+                href={service.href}
+                className="mt-8 inline-flex items-center gap-2 font-semibold text-orange-500 transition-colors hover:text-orange-600"
+              >
+                Learn More
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Link>
             </div>
           ))}
         </div>
