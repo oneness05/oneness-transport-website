@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AboutHero from "@/components/pages/about/AboutHero";
 import CompanyStory from "@/components/pages/about/CompanyStory";
+import MissionValues from "@/components/pages/about/MissionValues";
 
 export const metadata: Metadata = {
   title: "About Our Texas Dry Van Carrier",
@@ -26,6 +27,7 @@ export default function AboutPage() {
       <main>
         <AboutHero />
         <CompanyStory />
+        <MissionValues />
       </main>
       <Footer />
     </>
