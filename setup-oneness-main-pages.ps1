@@ -670,7 +670,9 @@ export default function BrokerSetupPage() {
                   key={document.title}
                   className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
                 >
-                  <div className="text-3xl">📄</div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-sm font-black text-orange-700">
+  PDF
+</div>
                   <h3 className="mt-5 text-xl font-black text-slate-950">
                     {document.title}
                   </h3>

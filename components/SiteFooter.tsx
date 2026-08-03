@@ -16,7 +16,7 @@ export default function SiteFooter() {
           <div className="mt-3 space-y-2 text-sm">
             <p>MC 91452779</p>
             <p>USDOT 4853711</p>
-            <p>53â€² Dry Van</p>
+            <p>53-Foot Dry Van</p>
             <p>Austin, Texas</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="border-t border-slate-800 px-5 py-5 text-center text-sm text-slate-500">
-        Â© {new Date().getFullYear()} ONENESS TRANSPORT LLC. All rights reserved.
+        Copyright {new Date().getFullYear()} ONENESS TRANSPORT LLC. All rights reserved.
       </div>
     </footer>
   );

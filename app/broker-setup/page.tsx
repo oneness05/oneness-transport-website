@@ -45,7 +45,7 @@ export default function BrokerSetupPage() {
             <Info label="Legal Name" value="ONENESS TRANSPORT LLC" />
             <Info label="MC Number" value="MC 91452779" />
             <Info label="USDOT Number" value="USDOT 4853711" />
-            <Info label="Equipment" value="53ft Dry Van" />
+            <Info label="Equipment" value="53-Foot Dry Van" />
           </div>
 
           <div className="mt-14 grid gap-8 lg:grid-cols-[1.25fr_0.75fr]">
@@ -57,7 +57,7 @@ export default function BrokerSetupPage() {
                 <Profile label="Auto Liability" value="$1,000,000" />
                 <Profile label="Cargo Coverage" value="$100,000" />
                 <Profile label="Power Unit" value="2023 Kenworth T680" />
-                <Profile label="Trailer Type" value="53ft Dry Van" />
+                <Profile label="Trailer Type" value="53-Foot Dry Van" />
               </div>
             </div>
 
@@ -92,10 +92,6 @@ export default function BrokerSetupPage() {
             <h2 className="mt-3 text-3xl font-black text-slate-950">
               Download onboarding documents
             </h2>
-            <p className="mt-4 max-w-2xl leading-7 text-slate-600">
-              Place the matching PDF files in the public/documents folder to
-              activate these links.
-            </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               {documents.map((document) => (
@@ -103,7 +99,9 @@ export default function BrokerSetupPage() {
                   key={document.title}
                   className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
                 >
-                  <div className="text-3xl">ðŸ“„</div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-sm font-black text-orange-700">
+  PDF
+</div>
                   <h3 className="mt-5 text-xl font-black text-slate-950">
                     {document.title}
                   </h3>
