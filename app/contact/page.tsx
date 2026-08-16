@@ -1,8 +1,12 @@
 ﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contact ONENESS TRANSPORT LLC dispatch for load opportunities, onboarding, and transportation support.",
+  title: "Contact Dispatch | Austin Dry Van Carrier",
+  description:
+    "Contact ONENESS TRANSPORT dispatch at 512-363-3649 for dry van load opportunities, broker onboarding and carrier documents.",
+  alternates: {
+    canonical: "https://www.onenesstransport.com/contact",
+  },
 };
 
 export default function ContactPage() {
