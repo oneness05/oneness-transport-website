@@ -1,8 +1,12 @@
 ﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Broker Setup",
-  description: "Carrier information, insurance limits, equipment details, and onboarding documents for ONENESS TRANSPORT LLC.",
+  title: "Carrier Setup for Freight Brokers",
+  description:
+    "Verify ONENESS TRANSPORT carrier credentials, MC and USDOT numbers, insurance limits, equipment and secure onboarding-document requests.",
+  alternates: {
+    canonical: "https://www.onenesstransport.com/broker-setup",
+  },
 };
 
 const documents = [
