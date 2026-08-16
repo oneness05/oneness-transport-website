@@ -1,5 +1,97 @@
-﻿import Image from "next/image";
+﻿import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+
+const siteUrl = "https://www.onenesstransport.com";
+
+export const metadata: Metadata = {
+  title: "Austin Dry Van Trucking Company | Oneness Transport",
+  description:
+    "Austin, Texas dry van carrier for full truckload freight. $1M liability, $100K cargo coverage and responsive dispatch. Call 512-363-3649.",
+  alternates: { canonical: siteUrl },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Oneness Transport",
+    url: siteUrl,
+    title: "Austin Dry Van Trucking Company | Oneness Transport",
+    description:
+      "Dependable 53-foot dry van full truckload transportation based in Austin, Texas, with responsive dispatch and verified carrier credentials.",
+    images: [
+      {
+        url: "/images/texas-dry-van-carrier.webp",
+        width: 1400,
+        height: 788,
+        alt: "Oneness Transport dry van truck serving Texas freight lanes",
+      },
+    ],
+  },
+};
+
+const homepageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "ONENESS TRANSPORT LLC",
+      alternateName: "Oneness Transport",
+      legalName: "ONENESS TRANSPORT LLC",
+      url: siteUrl,
+      logo: `${siteUrl}/logos/logo-header.png`,
+      image: `${siteUrl}/images/texas-dry-van-carrier.webp`,
+      description:
+        "Austin-based interstate motor carrier providing 53-foot dry van full truckload transportation for brokers and shippers.",
+      telephone: "+1-512-363-3649",
+      email: "dispatch@onenesstransport.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Austin",
+        addressRegion: "TX",
+        addressCountry: "US",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "dispatch",
+        telephone: "+1-512-363-3649",
+        email: "dispatch@onenesstransport.com",
+        areaServed: "US",
+        availableLanguage: "English",
+      },
+      identifier: [
+        {
+          "@type": "PropertyValue",
+          propertyID: "USDOT",
+          value: "4853711",
+        },
+        {
+          "@type": "PropertyValue",
+          propertyID: "MC",
+          value: "91452779",
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Oneness Transport",
+      publisher: { "@id": `${siteUrl}/#organization` },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "Service",
+      "@id": `${siteUrl}/#dry-van-service`,
+      name: "Dry Van Full Truckload Transportation",
+      serviceType: "53-foot dry van full truckload freight transportation",
+      provider: { "@id": `${siteUrl}/#organization` },
+      areaServed: {
+        "@type": "Country",
+        name: "United States",
+      },
+    },
+  ],
+};
 
 const trustItems = [
   "Active interstate carrier",
@@ -11,23 +103,29 @@ const trustItems = [
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homepageJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <section className="relative overflow-hidden bg-slate-950 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(249,115,22,0.18),transparent_38%)]" />
         <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:py-28">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-orange-400">
-              Texas-Based Dry Van Carrier
+              Austin, Texas &bull; Interstate Motor Carrier
             </p>
             <h1 className="mt-5 max-w-4xl text-5xl font-black leading-tight tracking-tight sm:text-6xl">
-              Driven by Integrity.
+              Austin dry van trucking for full truckload freight.
               <span className="block text-orange-500">
-                Delivered with Excellence.
+                Reliable capacity. Responsive dispatch.
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              ONENESS TRANSPORT LLC provides dependable full truckload dry van
-              service with professional communication, modern equipment, and a
-              commitment to safe, on-time delivery.
+              ONENESS TRANSPORT LLC provides dependable 53-foot dry van service
+              for brokers and shippers throughout Texas and interstate lanes,
+              backed by professional communication and modern equipment.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
