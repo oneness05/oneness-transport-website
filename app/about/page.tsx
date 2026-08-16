@@ -1,8 +1,12 @@
 ﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "Learn about ONENESS TRANSPORT LLC and our commitment to safe, dependable dry van freight transportation.",
+  title: "About Our Texas Trucking Company",
+  description:
+    "Meet ONENESS TRANSPORT LLC, an Austin-based dry van motor carrier focused on safe freight handling, communication and dependable service.",
+  alternates: {
+    canonical: "https://www.onenesstransport.com/about",
+  },
 };
 
 export default function AboutPage() {
