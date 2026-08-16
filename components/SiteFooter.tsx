@@ -36,6 +36,9 @@ export default function SiteFooter() {
             <Link className="block hover:text-orange-400" href="/broker-setup">
               Broker Setup & Documents
             </Link>
+            <Link className="block hover:text-orange-400" href="/blog">
+              Freight Resources & Blog
+            </Link>
           </div>
         </div>
       </div>

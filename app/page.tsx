@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import Image from "next/image";
+import Link from "next/link";
 
 const trustItems = [
   "Active interstate carrier",
@@ -130,6 +131,38 @@ export default function Home() {
             <Feature title="Safety-First Operations" />
             <Feature title="Modern Equipment" />
             <Feature title="On-Time Performance" />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-100 px-5 py-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 overflow-hidden rounded-3xl bg-white shadow-sm lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="relative aspect-[16/10] min-h-72 overflow-hidden lg:h-full">
+            <Image
+              src="/images/texas-dry-van-carrier.webp"
+              alt="Modern dry van carrier serving Texas"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="p-8 lg:p-12 lg:pl-2">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-orange-600">
+              Freight Resources
+            </p>
+            <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">
+              How to choose a reliable dry van carrier in Texas
+            </h2>
+            <p className="mt-5 max-w-2xl leading-8 text-slate-600">
+              A practical seven-point checklist for brokers and shippers covering
+              authority, insurance, equipment, safety, scheduling, and communication.
+            </p>
+            <Link
+              href="/blog/how-to-choose-dry-van-carrier-texas"
+              className="mt-7 inline-flex rounded-lg bg-slate-950 px-6 py-3.5 font-bold text-white transition hover:bg-orange-500 hover:text-slate-950"
+            >
+              Read the article
+            </Link>
           </div>
         </div>
       </section>
