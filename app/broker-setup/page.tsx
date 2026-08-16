@@ -28,7 +28,7 @@ const documents = [
     title: "Operating Authority",
     description:
       "Verify ONENESS TRANSPORT authority using the official FMCSA public record.",
-    href: "https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist",
+    href: "https://safer.fmcsa.dot.gov/query.asp?query_param=USDOT&query_string=4853711&query_type=queryCarrierSnapshot&searchtype=ANY",
     action: "Verify on FMCSA",
     badge: "FMCSA",
     external: true,
