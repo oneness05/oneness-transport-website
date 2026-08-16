@@ -54,7 +54,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-black text-slate-950">Our equipment</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <Stat label="Power Unit" value="2023 Kenworth T680" />
-            <Stat label="Trailer" value="53â€² Dry Van" />
+            <Stat label="Trailer" value="53-foot Dry Van" />
             <Stat label="Home Base" value="Austin, Texas" />
           </div>
         </div>
