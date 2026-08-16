@@ -49,7 +49,9 @@ export default function ServicesPage() {
               key={service.title}
               className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
             >
-              <div className="text-3xl">ðŸšš</div>
+              <div className="text-3xl" aria-hidden="true">
+                &#128666;
+              </div>
               <h2 className="mt-5 text-2xl font-black text-slate-950">
                 {service.title}
               </h2>
@@ -64,7 +66,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-black">Equipment profile</h2>
           <div className="mt-7 grid gap-5 md:grid-cols-3">
             <Profile label="Truck" value="2023 Kenworth T680" />
-            <Profile label="Trailer" value="53â€² Dry Van" />
+            <Profile label="Trailer" value="53-foot Dry Van" />
             <Profile label="Primary Service" value="Full Truckload" />
           </div>
         </div>
