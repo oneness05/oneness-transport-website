@@ -30,8 +30,8 @@ export default function ContactPage() {
             <div className="mt-8 space-y-6">
               <ContactItem
                 label="Phone"
-                value="586-382-8025"
-                href="tel:+15863828025"
+                value="512-363-3649"
+                href="tel:+15123633649"
               />
               <ContactItem
                 label="Email"
@@ -39,7 +39,7 @@ export default function ContactPage() {
                 href="mailto:dispatch@onenesstransport.com"
               />
               <ContactItem label="Location" value="Austin, Texas" />
-              <ContactItem label="Equipment" value="53â€² Dry Van" />
+              <ContactItem label="Equipment" value="53-foot Dry Van" />
             </div>
           </div>
 
