@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: "yearly", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     {
+      url: `${baseUrl}/blog/california-non-domiciled-cdl-crash-data`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog/how-to-choose-dry-van-carrier-texas`,
       lastModified,
       changeFrequency: "yearly",
