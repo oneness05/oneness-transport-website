@@ -1,8 +1,12 @@
 ﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: "Dry van full truckload and regional freight transportation services from ONENESS TRANSPORT LLC.",
+  title: "Dry Van Trucking Services in Texas",
+  description:
+    "53-foot dry van full truckload, regional freight and dedicated transportation from an Austin-based interstate motor carrier.",
+  alternates: {
+    canonical: "https://www.onenesstransport.com/services",
+  },
 };
 
 const services = [
