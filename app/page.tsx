@@ -50,11 +50,11 @@ export default function Home() {
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <Snapshot label="Legal Name" value="ONENESS TRANSPORT LLC" />
-              <Snapshot label="Equipment" value="53â€² Dry Van" />
+              <Snapshot label="Equipment" value="53-foot Dry Van" />
               <Snapshot label="MC Number" value="91452779" />
               <Snapshot label="USDOT Number" value="4853711" />
               <Snapshot label="Home Base" value="Austin, Texas" />
-              <Snapshot label="Dispatch" value="586-382-8025" />
+              <Snapshot label="Dispatch" value="512-363-3649" />
             </div>
           </div>
         </div>
@@ -68,7 +68,9 @@ export default function Home() {
                 key={item}
                 className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
               >
-                <div className="text-2xl text-orange-500">âœ“</div>
+                <div className="text-2xl text-orange-500" aria-hidden="true">
+                  &#10003;
+                </div>
                 <p className="mt-3 font-bold text-slate-900">{item}</p>
               </div>
             ))}
@@ -102,7 +104,7 @@ export default function Home() {
             href="/services"
             className="mt-8 inline-block font-bold text-orange-600 hover:text-orange-700"
           >
-            Explore all services â†’
+            Explore all services &#8594;
           </Link>
         </div>
       </section>
@@ -144,10 +146,10 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-3">
             <a
-              href="tel:+15863828025"
+              href="tel:+15123633649"
               className="rounded-lg bg-slate-950 px-6 py-3.5 font-bold text-white"
             >
-              Call 586-382-8025
+              Call 512-363-3649
             </a>
             <a
               href="mailto:dispatch@onenesstransport.com"
@@ -177,7 +179,7 @@ function ServiceCard({ title, text }: { title: string; text: string }) {
   return (
     <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-xl">
-        ðŸš›
+        &#128667;
       </div>
       <h3 className="mt-5 text-xl font-bold text-slate-950">{title}</h3>
       <p className="mt-3 leading-7 text-slate-600">{text}</p>
@@ -188,7 +190,9 @@ function ServiceCard({ title, text }: { title: string; text: string }) {
 function Feature({ title }: { title: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 p-6">
-      <div className="text-xl text-orange-500">âœ“</div>
+      <div className="text-xl text-orange-500" aria-hidden="true">
+        &#10003;
+      </div>
       <p className="mt-3 font-bold text-slate-950">{title}</p>
     </div>
   );
