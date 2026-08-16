@@ -70,10 +70,10 @@ export default function BrokerSetupPage() {
               </h2>
               <div className="mt-6 space-y-4">
                 <a
-                  href="tel:+15863828025"
+                  href="tel:+15123633649"
                   className="block rounded-xl bg-slate-950 px-5 py-3.5 text-center font-bold text-white"
                 >
-                  Call 586-382-8025
+                  Call 512-363-3649
                 </a>
                 <a
                   href="mailto:dispatch@onenesstransport.com"
