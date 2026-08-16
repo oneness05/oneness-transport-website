@@ -24,8 +24,8 @@ export default function SiteFooter() {
         <div>
           <p className="font-semibold text-white">Dispatch</p>
           <div className="mt-3 space-y-2 text-sm">
-            <a className="block hover:text-orange-400" href="tel:+15863828025">
-              586-382-8025
+            <a className="block hover:text-orange-400" href="tel:+15123633649">
+              512-363-3649
             </a>
             <a
               className="block hover:text-orange-400"
