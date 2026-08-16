@@ -8,18 +8,30 @@ export const metadata: Metadata = {
 const documents = [
   {
     title: "W-9 Form",
-    description: "Taxpayer identification form for carrier onboarding.",
-    href: "/documents/oneness-transport-w9.pdf",
+    description:
+      "Provided privately after the requesting broker and company email are verified.",
+    href: "mailto:dispatch@onenesstransport.com?subject=Secure%20W-9%20Request%20-%20ONENESS%20TRANSPORT&body=Hello%20ONENESS%20TRANSPORT%2C%0A%0APlease%20send%20your%20current%20W-9%20for%20carrier%20onboarding.%0A%0ABroker%20company%3A%0AContact%20name%3A%0ABroker%20MC%3A%0ACompany%20email%3A%0A%0AThank%20you.",
+    action: "Request W-9 Securely",
+    badge: "EMAIL",
+    external: false,
   },
   {
     title: "Certificate of Insurance",
-    description: "Current liability and cargo insurance certificate.",
-    href: "/documents/oneness-transport-coi.pdf",
+    description:
+      "Request the current liability and cargo certificate for verified onboarding.",
+    href: "mailto:dispatch@onenesstransport.com?subject=Current%20COI%20Request%20-%20ONENESS%20TRANSPORT&body=Hello%20ONENESS%20TRANSPORT%2C%0A%0APlease%20send%20your%20current%20Certificate%20of%20Insurance%20for%20carrier%20onboarding.%0A%0ABroker%20company%3A%0AContact%20name%3A%0ABroker%20MC%3A%0ACompany%20email%3A%0A%0AThank%20you.",
+    action: "Request Current COI",
+    badge: "EMAIL",
+    external: false,
   },
   {
     title: "Operating Authority",
-    description: "Federal motor carrier operating authority documentation.",
-    href: "/documents/oneness-transport-authority.pdf",
+    description:
+      "Verify ONENESS TRANSPORT authority using the official FMCSA public record.",
+    href: "https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist",
+    action: "Verify on FMCSA",
+    badge: "FMCSA",
+    external: true,
   },
 ];
 
@@ -90,8 +102,12 @@ export default function BrokerSetupPage() {
               Carrier Documents
             </p>
             <h2 className="mt-3 text-3xl font-black text-slate-950">
-              Download onboarding documents
+              Secure onboarding documents
             </h2>
+            <p className="mt-4 max-w-3xl leading-7 text-slate-600">
+              Sensitive tax and insurance documents are provided only after
+              broker verification. They are not stored on this public website.
+            </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               {documents.map((document) => (
@@ -99,9 +115,9 @@ export default function BrokerSetupPage() {
                   key={document.title}
                   className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-sm font-black text-orange-700">
-  PDF
-</div>
+                  <div className="flex h-12 min-w-12 items-center justify-center self-start rounded-xl bg-orange-100 px-3 text-xs font-black text-orange-700">
+                    {document.badge}
+                  </div>
                   <h3 className="mt-5 text-xl font-black text-slate-950">
                     {document.title}
                   </h3>
@@ -110,11 +126,11 @@ export default function BrokerSetupPage() {
                   </p>
                   <a
                     href={document.href}
-                    target="_blank"
-                    rel="noreferrer"
+                    target={document.external ? "_blank" : undefined}
+                    rel={document.external ? "noreferrer" : undefined}
                     className="mt-6 rounded-lg bg-slate-950 px-5 py-3 text-center font-bold text-white hover:bg-orange-600"
                   >
-                    View Document
+                    {document.action}
                   </a>
                 </article>
               ))}
