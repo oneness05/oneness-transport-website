@@ -33,6 +33,53 @@ export default function BlogPage() {
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link
+              href="/blog/fmcsa-revoked-elds-october-2026-deadline"
+              className="relative block min-h-80 overflow-hidden"
+              aria-label="Read FMCSA Revoked Five ELDs—What Carriers Must Do Before October 6"
+            >
+              <Image
+                src="/images/fmcsa-revoked-elds-2026.webp"
+                alt="Dry van truck with an electronic logging device warning and compliance calendar"
+                fill
+                priority
+                sizes="(min-width: 1024px) 48vw, 100vw"
+                className="object-cover transition duration-500 hover:scale-[1.02]"
+              />
+            </Link>
+
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">
+                  ELD &amp; Compliance News
+                </span>
+                <time dateTime="2026-08-21">August 21, 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>8 min read</span>
+              </div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950">
+                <Link
+                  href="/blog/fmcsa-revoked-elds-october-2026-deadline"
+                  className="transition hover:text-orange-600"
+                >
+                  FMCSA Revoked Five ELDs—What Carriers Must Do Before October 6
+                </Link>
+              </h2>
+              <p className="mt-5 leading-8 text-slate-600">
+                Check the five affected devices, the October 6 replacement deadline,
+                enforcement timeline, and practical steps for preserving driver logs
+                and completing a compliant cutover.
+              </p>
+              <Link
+                href="/blog/fmcsa-revoked-elds-october-2026-deadline"
+                className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700"
+              >
+                Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link
               href="/blog/california-non-domiciled-cdl-crash-data"
               className="relative block min-h-80 overflow-hidden"
               aria-label="Read California Says Non-Domiciled CDL Holders Had Lower Crash Rates"
@@ -41,7 +88,6 @@ export default function BlogPage() {
                 src="/images/california-non-domiciled-cdl-court-case.png"
                 alt="Editorial illustration of a dry van truck, California, crash data, a CDL card, and courthouse scales"
                 fill
-                priority
                 sizes="(min-width: 1024px) 48vw, 100vw"
                 className="object-cover transition duration-500 hover:scale-[1.02]"
               />

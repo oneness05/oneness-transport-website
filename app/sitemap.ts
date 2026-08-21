@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.onenesstransport.com";
-  const lastModified = new Date("2026-08-16T12:00:00-05:00");
+  const lastModified = new Date("2026-08-21T12:05:00-05:00");
 
   return [
     { url: baseUrl, lastModified, changeFrequency: "monthly", priority: 1 },
@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/broker-setup`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: "yearly", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.8 },
+    {
+      url: `${baseUrl}/blog/fmcsa-revoked-elds-october-2026-deadline`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     {
       url: `${baseUrl}/blog/california-non-domiciled-cdl-crash-data`,
       lastModified,
