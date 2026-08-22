@@ -33,6 +33,53 @@ export default function BlogPage() {
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link
+              href="/blog/cvsa-brake-safety-week-2026-checklist"
+              className="relative block min-h-80 overflow-hidden"
+              aria-label="Read CVSA Brake Safety Week 2026: A Practical Inspection Checklist"
+            >
+              <Image
+                src="/images/cvsa-brake-safety-week-2026.webp"
+                alt="Diesel technician inspecting a heavy-truck brake rotor before Brake Safety Week"
+                fill
+                priority
+                sizes="(min-width: 1024px) 48vw, 100vw"
+                className="object-cover transition duration-500 hover:scale-[1.02]"
+              />
+            </Link>
+
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">
+                  Maintenance &amp; Compliance News
+                </span>
+                <time dateTime="2026-08-22">August 22, 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>9 min read</span>
+              </div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950">
+                <Link
+                  href="/blog/cvsa-brake-safety-week-2026-checklist"
+                  className="transition hover:text-orange-600"
+                >
+                  CVSA Brake Safety Week 2026: A Practical Inspection Checklist
+                </Link>
+              </h2>
+              <p className="mt-5 leading-8 text-slate-600">
+                Prepare for the August 23-29 inspection initiative with the 2026
+                drum-and-rotor focus, tractor-trailer checks, repair documentation,
+                and roadside report deadlines.
+              </p>
+              <Link
+                href="/blog/cvsa-brake-safety-week-2026-checklist"
+                className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700"
+              >
+                Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link
               href="/blog/fmcsa-revoked-elds-october-2026-deadline"
               className="relative block min-h-80 overflow-hidden"
               aria-label="Read FMCSA Revoked Five ELDs—What Carriers Must Do Before October 6"
