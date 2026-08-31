@@ -33,6 +33,45 @@ export default function BlogPage() {
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link
+              href="/blog/fmcsa-cdl-training-provider-audit-2026"
+              className="relative block min-h-80 overflow-hidden"
+              aria-label="Read FMCSA CDL Training Crackdown: What Carriers Should Know"
+            >
+              <Image
+                src="/images/fmcsa-cdl-training-audit-2026.webp"
+                alt="Dry van truck, CDL card, compliance checklist, and nationwide training-provider audit map"
+                fill
+                priority
+                sizes="(min-width: 1024px) 48vw, 100vw"
+                className="object-cover transition duration-500 hover:scale-[1.02]"
+              />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">
+                  CDL Training &amp; Compliance News
+                </span>
+                <time dateTime="2026-08-31">August 31, 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>10 min read</span>
+              </div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950">
+                <Link href="/blog/fmcsa-cdl-training-provider-audit-2026" className="transition hover:text-orange-600">
+                  FMCSA CDL Training Crackdown: What Carriers Should Know
+                </Link>
+              </h2>
+              <p className="mt-5 leading-8 text-slate-600">
+                Understand the 110 emergency school removals, 160-plus proposed removals,
+                nationwide skills-tester audit, and the verification steps drivers can take now.
+              </p>
+              <Link href="/blog/fmcsa-cdl-training-provider-audit-2026" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">
+                Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link
               href="/blog/freight-broker-packet-checklist-new-carriers"
               className="relative block min-h-80 overflow-hidden"
               aria-label="Read Freight Broker Packet Checklist for New Carriers"
