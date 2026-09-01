@@ -32,6 +32,21 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link href="/blog/trucking-insurance-coverage-comparison-owner-operators" className="relative block min-h-80 overflow-hidden" aria-label="Read Trucking Insurance Coverage Comparison for Owner-Operators">
+              <Image src="/images/trucking-insurance-coverage-comparison-2026.webp" alt="Dry van truck surrounded by symbols for liability, cargo, equipment, trailer, and off-duty insurance protection" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">Insurance &amp; Owner-Operator Business</span>
+                <time dateTime="2026-09-01">September 1, 2026</time><span aria-hidden="true">&middot;</span><span>11 min read</span>
+              </div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950"><Link href="/blog/trucking-insurance-coverage-comparison-owner-operators" className="transition hover:text-orange-600">Trucking Insurance Coverage Comparison for Owner-Operators</Link></h2>
+              <p className="mt-5 leading-8 text-slate-600">Compare primary liability, cargo, physical damage, bobtail, non-trucking liability, general liability, and trailer interchange—plus the gaps to review before binding.</p>
+              <Link href="/blog/trucking-insurance-coverage-comparison-owner-operators" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span></Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link
               href="/blog/fmcsa-cdl-training-provider-audit-2026"
               className="relative block min-h-80 overflow-hidden"
