@@ -32,6 +32,18 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link href="/blog/how-to-calculate-trucking-cost-per-mile-owner-operators" className="relative block min-h-80 overflow-hidden" aria-label="Read How to Calculate Trucking Cost Per Mile">
+              <Image src="/images/trucking-cost-per-mile-owner-operator-2026.webp" alt="Dry van truck beside a calculator and operating-cost worksheet for cost-per-mile planning" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500"><span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">Owner-Operator Business</span><time dateTime="2026-09-03">September 3, 2026</time><span aria-hidden="true">&middot;</span><span>12 min read</span></div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950"><Link href="/blog/how-to-calculate-trucking-cost-per-mile-owner-operators" className="transition hover:text-orange-600">How to Calculate Trucking Cost Per Mile</Link></h2>
+              <p className="mt-5 leading-8 text-slate-600">Calculate fixed and variable costs, deadhead, owner pay, reserves, loaded-mile break-even, and the minimum rate your truck needs.</p>
+              <Link href="/blog/how-to-calculate-trucking-cost-per-mile-owner-operators" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span></Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link href="/blog/freight-factoring-comparison-owner-operators-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read Outgo vs RTS vs OTR vs Triumph freight factoring comparison">
               <Image src="/images/freight-factoring-comparison-2026.webp" alt="Dry van carrier comparing four unlabeled freight factoring offers, funding timelines, and invoice costs" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
             </Link>
