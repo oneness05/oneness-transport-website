@@ -32,6 +32,51 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link
+              href="/blog/texas-ifta-filing-recordkeeping-guide-2026"
+              className="relative block min-h-80 overflow-hidden"
+              aria-label="Read Texas IFTA Filing Guide for 2026"
+            >
+              <Image
+                src="/images/texas-ifta-filing-guide-2026.webp"
+                alt="Texas dry van truck beside an IFTA mileage map, fuel receipt, and quarterly filing checklist"
+                fill
+                priority
+                sizes="(min-width: 1024px) 48vw, 100vw"
+                className="object-cover transition duration-500 hover:scale-[1.02]"
+              />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">
+                  Texas Carrier Compliance
+                </span>
+                <time dateTime="2026-09-05">September 5, 2026</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>11 min read</span>
+              </div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950">
+                <Link
+                  href="/blog/texas-ifta-filing-recordkeeping-guide-2026"
+                  className="transition hover:text-orange-600"
+                >
+                  Texas IFTA Filing Guide: Q3 2026 Deadline and Records
+                </Link>
+              </h2>
+              <p className="mt-5 leading-8 text-slate-600">
+                Track jurisdiction miles, protect fuel-tax credits, reconcile monthly,
+                meet the November 2 deadline, and keep an audit-ready carrier file.
+              </p>
+              <Link
+                href="/blog/texas-ifta-filing-recordkeeping-guide-2026"
+                className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700"
+              >
+                Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link href="/blog/cvsa-international-roadcheck-results-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read 2026 CVSA International Roadcheck Results">
               <Image src="/images/cvsa-roadcheck-results-2026.webp" alt="Dry van truck undergoing a professional roadside safety inspection with brake, tire, light, medical-card, and ELD symbols" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
             </Link>
