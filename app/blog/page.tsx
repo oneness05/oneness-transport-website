@@ -32,6 +32,18 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link href="/blog/motive-vs-samsara-vs-garmin-eld-comparison-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read Motive vs Samsara vs Garmin eLog comparison">
+              <Image src="/images/motive-samsara-garmin-eld-comparison-2026.webp" alt="Dry van truck with generic ELD adapter, driver logbook phone, fleet tablet, USB cable, and Bluetooth symbols" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500"><span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">ELD &amp; Carrier Technology</span><time dateTime="2026-09-09">September 9, 2026</time><span aria-hidden="true">&middot;</span><span>12 min read</span></div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950"><Link href="/blog/motive-vs-samsara-vs-garmin-eld-comparison-2026" className="transition hover:text-orange-600">Motive vs Samsara vs Garmin eLog: ELD Comparison</Link></h2>
+              <p className="mt-5 leading-8 text-slate-600">Compare FMCSA registration, roadside transfer, connected workflows, pricing models, and the questions a one-truck carrier should ask before signing.</p>
+              <Link href="/blog/motive-vs-samsara-vs-garmin-eld-comparison-2026" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span></Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link href="/blog/owner-operator-preventive-maintenance-checklist-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read the Owner-Operator Preventive Maintenance Checklist">
               <Image src="/images/owner-operator-preventive-maintenance-checklist-2026.webp" alt="Dark blue semi truck and white dry van trailer in a maintenance bay with tire, brake, fluid, light, battery, and service-record symbols" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
             </Link>
