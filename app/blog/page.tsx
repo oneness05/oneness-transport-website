@@ -32,6 +32,18 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link href="/blog/how-to-verify-freight-broker-before-booking-load-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read How to Verify a Freight Broker Before Booking a Load">
+              <Image src="/images/how-to-verify-freight-broker-2026.webp" alt="Owner-operator comparing a broker profile and document checklist beside a dark blue dry van truck" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500"><span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">Broker Verification &amp; Carrier Risk</span><time dateTime="2026-09-10">September 10, 2026</time><span aria-hidden="true">&middot;</span><span>11 min read</span></div>
+              <h2 className="mt-5 text-3xl font-black leading-tight text-slate-950"><Link href="/blog/how-to-verify-freight-broker-before-booking-load-2026" className="transition hover:text-orange-600">How to Verify a Freight Broker Before Booking a Load</Link></h2>
+              <p className="mt-5 leading-8 text-slate-600">Verify authority, bond or trust, contact identity, payment risk, and every rate-confirmation term before your truck moves.</p>
+              <Link href="/blog/how-to-verify-freight-broker-before-booking-load-2026" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span></Link>
+            </div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link href="/blog/motive-vs-samsara-vs-garmin-eld-comparison-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read Motive vs Samsara vs Garmin eLog comparison">
               <Image src="/images/motive-samsara-garmin-eld-comparison-2026.webp" alt="Dry van truck with generic ELD adapter, driver logbook phone, fleet tablet, USB cable, and Bluetooth symbols" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
             </Link>
