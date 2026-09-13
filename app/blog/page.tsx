@@ -32,6 +32,13 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link href="/blog/national-truck-driver-appreciation-week-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read National Truck Driver Appreciation Week 2026">
+              <Image src="/images/national-truck-driver-appreciation-week-2026.webp" alt="Professional dry van truck driver beside a dark blue tractor and white trailer at sunrise" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12"><div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500"><span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">Industry Recognition &amp; Driver Support</span><time dateTime="2026-09-13">September 13, 2026</time><span aria-hidden="true">&middot;</span><span>10 min read</span></div><h2 className="mt-5 text-3xl font-black leading-tight text-slate-950"><Link href="/blog/national-truck-driver-appreciation-week-2026" className="transition hover:text-orange-600">National Truck Driver Appreciation Week 2026</Link></h2><p className="mt-5 leading-8 text-slate-600">Turn September 13–19 recognition into safer schedules, better facilities, accurate information, and year-round professional respect.</p><Link href="/blog/national-truck-driver-appreciation-week-2026" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span></Link></div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link href="/blog/trucking-accessorial-fees-detention-layover-tonu-guide" className="relative block min-h-80 overflow-hidden" aria-label="Read the Trucking Accessorial Fees Guide">
               <Image src="/images/trucking-accessorial-fees-guide-2026.webp" alt="Dry van at a loading dock with visual symbols for detention, layover, cancellation, extra stops, and receipts" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
             </Link>
