@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.onenesstransport.com";
-  const lastModified = new Date("2026-09-13T15:55:00-05:00");
+  const lastModified = new Date("2026-09-14T15:24:00-05:00");
 
   return [
     { url: baseUrl, lastModified, changeFrequency: "monthly", priority: 1 },
@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/broker-setup`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: "yearly", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.8 },
+    {
+      url: `${baseUrl}/blog/proof-of-delivery-freight-invoice-checklist-carriers`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     {
       url: `${baseUrl}/blog/national-truck-driver-appreciation-week-2026`,
       lastModified,
