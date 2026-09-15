@@ -32,6 +32,13 @@ export default function BlogPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-8">
           <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
+            <Link href="/blog/truck-parking-planning-guide-owner-operators-2026" className="relative block min-h-80 overflow-hidden" aria-label="Read the Truck Parking Planning Guide for Owner-Operators">
+              <Image src="/images/truck-parking-planning-guide-owner-operators-2026.webp" alt="Dark blue sleeper tractor and white dry van entering a well-lit truck parking facility at dusk" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
+            </Link>
+            <div className="p-8 sm:p-10 lg:p-12"><div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500"><span className="rounded-full bg-orange-100 px-3 py-1 text-orange-700">Trip Planning &amp; Driver Safety</span><time dateTime="2026-09-15">September 15, 2026</time><span aria-hidden="true">&middot;</span><span>11 min read</span></div><h2 className="mt-5 text-3xl font-black leading-tight text-slate-950"><Link href="/blog/truck-parking-planning-guide-owner-operators-2026" className="transition hover:text-orange-600">Truck Parking Planning Guide for Owner-Operators</Link></h2><p className="mt-5 leading-8 text-slate-600">Build parking into every load plan with realistic HOS buffers, three legal stop options, personal-conveyance limits, and a safe shutdown workflow.</p><Link href="/blog/truck-parking-planning-guide-owner-operators-2026" className="mt-7 inline-flex items-center font-bold text-orange-600 hover:text-orange-700">Read the full article <span className="ml-2" aria-hidden="true">&rarr;</span></Link></div>
+          </article>
+
+          <article className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:grid-cols-[0.95fr_1.05fr]">
             <Link href="/blog/proof-of-delivery-freight-invoice-checklist-carriers" className="relative block min-h-80 overflow-hidden" aria-label="Read the Proof of Delivery and Freight Invoice Checklist">
               <Image src="/images/proof-of-delivery-freight-invoice-checklist-2026.webp" alt="Driver and dispatcher reviewing proof-of-delivery and freight billing documents beside a dry van" fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover transition duration-500 hover:scale-[1.02]" />
             </Link>
